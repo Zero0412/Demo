@@ -1,0 +1,377 @@
+<!DOCTYPE html> <!-- 文档类型,告诉你的电脑,这是一个网页文件 -->
+<html lang="zh-cn"> <!-- 网页的基本标签,设置网页的默认语言为中文-->
+<head> <!-- 头标签,里面主要写的是关于这个网页的设置内容,信息.主要是给浏览器看的 -->
+    <meta charset="UTF-8"> <!-- meta元标签,属性描述.  设置字符编码为utf-8 -->
+    <title>展示</title> <!-- 网页的标题-->
+
+    <style>
+        *{ /*选择整个网页的元素 清空边距*/
+            margin: 0; /* 外边距 */
+            padding: 0; /* 内边距 */
+        }
+
+        .All{
+            margin: 50px 565px;
+        }
+
+        #photo{ /*让你可以通过id名字找到具体的数据*/
+            width: 669px; /* 宽度 设置为800像素 */
+            height: 4032px; /* 高度 设置为400像素*/
+            margin: 50px 565px; /* 设置外边距 距离上方70像素 距离左右自动居中*/
+            padding: 15px; /* 设置内边距 15像素*/
+            text-align: center; /*设置盒子内的内容。居中显示*/
+            position: absolute;
+            top: 52px;
+        }
+
+        .photo_ img{
+            width: 280px;
+            height: 280px;
+        }
+
+        #photo img:hover{
+            transform: scale(1.2);
+            transition: 1s;
+        }
+
+        
+        #photo .s1{
+            transform: rotate(7deg);
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 910px;
+            left: 265px;
+        }
+        #photo .s2{
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            top: 655px;
+            left: 250px;
+        }
+        #photo .s3{
+            transform: rotate(20deg);
+            position: absolute;
+            height: 310px;
+            width: 310px;
+            top: 230px;
+            left: 190px;
+        }
+        #photo .s4{
+            position: absolute;
+            height: 160px;
+            width: 160px;
+            top: 670px;
+            left: 465px;
+        }
+        #photo .s5{
+            transform: rotate(20deg);
+            position: absolute;
+            height: 240px;
+            width: 240px;
+            top: 670px;
+            left: 15px;
+        }
+        #photo .s6{
+            transform: rotate(-10deg);
+            position: absolute;
+            height: 160px;
+            width: 160px;
+            top: 1450px;
+            left: 430px;
+        }
+        #photo .s7{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1630px;
+            left: -25px;
+        }
+        #photo .s8{
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            top: 1850px;
+            left: 135px;
+        }
+        #photo .s9{
+            transform: rotate(-15deg);
+            position: absolute;
+            height: 340px;
+            width: 340px;
+            top: 1550px;
+            left: 385px;
+        }
+        #photo .s10{
+            transform: rotate(15deg);
+            position: absolute;
+            height: 190px;
+            width: 190px;
+            top: 1500px;
+            left: 165px;
+        }
+        #photo .s11{
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            top: 2400px;
+            left: 60px;
+            z-index: 1;
+        }
+        #photo .s12{
+            position: absolute;
+            height: 700px;
+            width: 700px;
+            top: 2050px;
+            left: 0px;
+        }
+        #photo .s13{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 2600px;
+            left: 245px;
+        }
+        #photo .s14{
+            transform: rotate(10deg);
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            top: 490px;
+            left: 400px;
+        }
+        #photo .s15{
+            /* transform: rotate(10deg); */
+            position: absolute;
+            height: 180px;
+            width: 180px;
+            top: 2800px;
+            left: 100px;
+        }
+        #photo .s16{
+            transform: rotate(10deg);
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 970px;
+            left: 10px;
+        }
+        #photo .s17{
+            transform: rotate(10deg);
+            position: absolute;
+            height: 170px;
+            width: 170px;
+            top: 950px;
+            left: 425px;
+        }
+        #photo .s18{
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 1080px;
+            left: 400px;
+        }
+        #photo .s19{
+            position: absolute;
+            height: 270px;
+            width: 270px;
+            top: 1180px;
+            left: 110px;
+        }
+        #photo .s20{
+            position: absolute;
+            height: 250px;
+            width: 250px;
+            top: 825px;
+            left: 80px;
+        }
+
+        .s1_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 910px;
+            left: 730px;
+        }
+        .s2_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 700px;
+            left: 690px;
+        }
+        .s3_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 250px;
+            left: 690px;
+        }
+        .s4_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 800px;
+            left: 1000px;
+        }.s5_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 710px;
+            left: 600px;
+        }.s6_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1400px;
+            left: 990px;
+        }.s7_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1600px;
+            left: 500px;
+        }.s8_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1850px;
+            left: 690px;
+        }.s9_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1780px;
+            left: 990px;
+        }.s10_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1600px;
+            left: 690px;
+        }.s11_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 2300px;
+            left: 490px;
+        }.s12_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 2200px;
+            left: 690px;
+        }.s13_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 2600px;
+            left: 690px;
+        }.s14_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 510px;
+            left: 990px;
+        }.s15_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 2900px;
+            left: 690px;
+        }.s16_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1050px;
+            left: 490px;
+        }.s17_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 910px;
+            left: 990px;
+        }.s18_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1200px;
+            left: 990px;
+        }.s19_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 1200px;
+            left: 690px;
+        }.s20_{
+            position: absolute;
+            height: 280px;
+            width: 280px;
+            top: 910px;
+            left: 690px;
+        }
+    </style>
+
+
+    <script>
+        function handleMsg(id) {
+                for(var num = 1; num <= 20; num ++){
+                    if (num+'_' === id){
+                        document.getElementById(num+'_').style.display="block"
+                    }
+                    else{
+                        document.getElementById(num+'_').style.display="none"
+                    }
+                }  
+        }
+    </script>
+
+</head> 
+<body> <!-- 身体标签,里面写的是给用户看的内容,文字,图片,视频,音乐的 -->
+    <img class="All" src="img/All.jpg" alt="">
+    <div id = "photo"> <!-- 盒子标签,本身没有特别的含义,一般是用来装一些内容的. 它本身是没有样式.没有长宽高.也没有颜色-->
+        <img onclick="handleMsg('1_')" class="s1" src="img/1.png">
+        <img onclick="handleMsg('2_')" class="s2" src="img/2.png">
+        <img onclick="handleMsg('3_')" class="s3" src="img/3.png">
+        <img onclick="handleMsg('4_')" class="s4" src="img/4.png">
+        <img onclick="handleMsg('5_')" class="s5" src="img/5.png">
+        <img onclick="handleMsg('6_')" class="s6" src="img/6.png">
+        <img onclick="handleMsg('7_')" class="s7" src="img/7.png">
+        <img onclick="handleMsg('8_')" class="s8" src="img/8.png">
+        <img onclick="handleMsg('9_')" class="s9" src="img/9.png">
+        <img onclick="handleMsg('10_')" class="s10" src="img/10.png">
+        <img onclick="handleMsg('11_')" class="s11" src="img/11.png">
+        <img onclick="handleMsg('12_')" class="s12" src="img/12.png">
+        <img onclick="handleMsg('13_')" class="s13" src="img/13.png">
+        <img onclick="handleMsg('14_')" class="s14" src="img/14.png">
+        <img onclick="handleMsg('15_')" class="s15" src="img/15.png">
+        <img onclick="handleMsg('16_')" class="s16" src="img/16.png">
+        <img onclick="handleMsg('17_')" class="s17" src="img/17.png">
+        <img onclick="handleMsg('18_')" class="s18" src="img/18.png">
+        <img onclick="handleMsg('19_')" class="s19" src="img/19.png">
+        <img onclick="handleMsg('20_')" class="s20" src="img/20.png">
+    </div>
+        <img id="1_" class="s1_" style="display: none;" src="img/1_.png">
+        <img id="2_" class="s2_" style="display: none;" src="img/2_.png">
+        <img id="3_" class="s3_" style="display: none;" src="img/3_.png">
+        <img id="4_" class="s4_" style="display: none;" src="img/4_.png">
+        <img id="5_" class="s5_" style="display: none;" src="img/5_.png">
+        <img id="6_" class="s6_" style="display: none;" src="img/6_.png">
+        <img id="7_" class="s7_" style="display: none;" src="img/7_.png">
+        <img id="8_" class="s8_" style="display: none;" src="img/8_.png">
+        <img id="9_" class="s9_" style="display: none;" src="img/9_.png">
+        <img id="10_" class="s10_" style="display: none;" src="img/10_.png">
+        <img id="11_" class="s11_" style="display: none;" src="img/11_.png">
+        <img id="12_" class="s12_" style="display: none;" src="img/12_.png">
+        <img id="13_" class="s13_" style="display: none;" src="img/13_.png">
+        <img id="14_" class="s14_" style="display: none;" src="img/14_.png">
+        <img id="15_" class="s15_" style="display: none;" src="img/15_.png">
+        <img id="16_" class="s16_" style="display: none;" src="img/16_.png">
+        <img id="17_" class="s17_" style="display: none;" src="img/17_.png">
+        <img id="18_" class="s18_" style="display: none;" src="img/18_.png">
+        <img id="19_" class="s19_" style="display: none;" src="img/19_.png">
+        <img id="20_" class="s20_" style="display: none;" src="img/20_.png">
+
+</body>
+</html>
